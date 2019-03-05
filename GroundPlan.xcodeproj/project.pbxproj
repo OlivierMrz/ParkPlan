@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D771A2058ABFC00B8746C /* ErnestineWeb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF1D77182058ABFC00B8746C /* ErnestineWeb.ttf */; };
+		BF1D771B2058ABFC00B8746C /* ErnestineWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF1D77192058ABFC00B8746C /* ErnestineWeb-Bold.ttf */; };
+		BF1D771D2058B7C900B8746C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D771C2058B7C900B8746C /* CustomButton.swift */; };
+		BFB8BCD620574620000D2EE9 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB8BCD520574620000D2EE9 /* MainNavigationController.swift */; };
+		BFDC6A472057119000BA69D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A462057119000BA69D9 /* TabBarController.swift */; };
+		BFDC6A492057146C00BA69D9 /* GroundplanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A482057146C00BA69D9 /* GroundplanController.swift */; };
+		BFDC6A4B2057147F00BA69D9 /* HoursController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A4A2057147F00BA69D9 /* HoursController.swift */; };
+		BFDC6A4D2057148A00BA69D9 /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A4C2057148A00BA69D9 /* TicketsController.swift */; };
+		BFDC6A4F2057149700BA69D9 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A4E2057149700BA69D9 /* WeatherController.swift */; };
+		BFDC6A512057151600BA69D9 /* ParkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A502057151600BA69D9 /* ParkTableViewController.swift */; };
+		BFDC6A53205716C800BA69D9 /* SubParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC6A52205716C800BA69D9 /* SubParkTableViewCell.swift */; };
 		BFEAF2402056EA7300E2A1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF23F2056EA7300E2A1F6 /* AppDelegate.swift */; };
-		BFEAF2422056EA7300E2A1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF2412056EA7300E2A1F6 /* ViewController.swift */; };
 		BFEAF2452056EA7300E2A1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAF2432056EA7300E2A1F6 /* Main.storyboard */; };
 		BFEAF2482056EA7300E2A1F6 /* GroundPlan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF2462056EA7300E2A1F6 /* GroundPlan.xcdatamodeld */; };
 		BFEAF24A2056EA7300E2A1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAF2492056EA7300E2A1F6 /* Assets.xcassets */; };
 		BFEAF24D2056EA7300E2A1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAF24B2056EA7300E2A1F6 /* LaunchScreen.storyboard */; };
+		BFEAF2552056EC1600E2A1F6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF2542056EC1600E2A1F6 /* HomeTableViewController.swift */; };
+		BFEAF2582056EF5A00E2A1F6 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF2572056EF5A00E2A1F6 /* Classes.swift */; };
+		BFEAF25A2056F2DA00E2A1F6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAF2592056F2DA00E2A1F6 /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1D77182058ABFC00B8746C /* ErnestineWeb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ErnestineWeb.ttf; sourceTree = "<group>"; };
+		BF1D77192058ABFC00B8746C /* ErnestineWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ErnestineWeb-Bold.ttf"; sourceTree = "<group>"; };
+		BF1D771C2058B7C900B8746C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BFB8BCD520574620000D2EE9 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		BFDC6A462057119000BA69D9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BFDC6A482057146C00BA69D9 /* GroundplanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundplanController.swift; sourceTree = "<group>"; };
+		BFDC6A4A2057147F00BA69D9 /* HoursController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursController.swift; sourceTree = "<group>"; };
+		BFDC6A4C2057148A00BA69D9 /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
+		BFDC6A4E2057149700BA69D9 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		BFDC6A502057151600BA69D9 /* ParkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewController.swift; sourceTree = "<group>"; };
+		BFDC6A52205716C800BA69D9 /* SubParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubParkTableViewCell.swift; sourceTree = "<group>"; };
 		BFEAF23C2056EA7300E2A1F6 /* GroundPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroundPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAF23F2056EA7300E2A1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFEAF2412056EA7300E2A1F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFEAF2442056EA7300E2A1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFEAF2472056EA7300E2A1F6 /* GroundPlan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroundPlan.xcdatamodel; sourceTree = "<group>"; };
 		BFEAF2492056EA7300E2A1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEAF24C2056EA7300E2A1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFEAF24E2056EA7300E2A1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEAF2542056EC1600E2A1F6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		BFEAF2572056EF5A00E2A1F6 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Classes.swift; path = GroundPlan/Model/Classes.swift; sourceTree = SOURCE_ROOT; };
+		BFEAF2592056F2DA00E2A1F6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +63,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF1D77132058A9BC00B8746C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D77192058ABFC00B8746C /* ErnestineWeb-Bold.ttf */,
+				BF1D77182058ABFC00B8746C /* ErnestineWeb.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BFAC51B92222F1400031A9CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAF2572056EF5A00E2A1F6 /* Classes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFAC51BA2222F14E0031A9CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFB8BCD520574620000D2EE9 /* MainNavigationController.swift */,
+				BFEAF2542056EC1600E2A1F6 /* HomeTableViewController.swift */,
+				BFDC6A502057151600BA69D9 /* ParkTableViewController.swift */,
+				BFDC6A462057119000BA69D9 /* TabBarController.swift */,
+				BFDC6A482057146C00BA69D9 /* GroundplanController.swift */,
+				BFDC6A4A2057147F00BA69D9 /* HoursController.swift */,
+				BFDC6A4C2057148A00BA69D9 /* TicketsController.swift */,
+				BFDC6A4E2057149700BA69D9 /* WeatherController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFAC51BB2222F1570031A9CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAF2592056F2DA00E2A1F6 /* HomeTableViewCell.swift */,
+				BFDC6A52205716C800BA69D9 /* SubParkTableViewCell.swift */,
+				BF1D771C2058B7C900B8746C /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BFEAF2332056EA7300E2A1F6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +124,16 @@
 		BFEAF23E2056EA7300E2A1F6 /* GroundPlan */ = {
 			isa = PBXGroup;
 			children = (
+				BFAC51BB2222F1570031A9CA /* Views */,
+				BFAC51BA2222F14E0031A9CA /* Controllers */,
+				BFAC51B92222F1400031A9CA /* Model */,
 				BFEAF23F2056EA7300E2A1F6 /* AppDelegate.swift */,
-				BFEAF2412056EA7300E2A1F6 /* ViewController.swift */,
 				BFEAF2432056EA7300E2A1F6 /* Main.storyboard */,
 				BFEAF2492056EA7300E2A1F6 /* Assets.xcassets */,
 				BFEAF24B2056EA7300E2A1F6 /* LaunchScreen.storyboard */,
-				BFEAF24E2056EA7300E2A1F6 /* Info.plist */,
 				BFEAF2462056EA7300E2A1F6 /* GroundPlan.xcdatamodeld */,
+				BF1D77132058A9BC00B8746C /* Fonts */,
+				BFEAF24E2056EA7300E2A1F6 /* Info.plist */,
 			);
 			path = GroundPlan;
 			sourceTree = "<group>";
@@ -128,7 +199,9 @@
 			files = (
 				BFEAF24D2056EA7300E2A1F6 /* LaunchScreen.storyboard in Resources */,
 				BFEAF24A2056EA7300E2A1F6 /* Assets.xcassets in Resources */,
+				BF1D771B2058ABFC00B8746C /* ErnestineWeb-Bold.ttf in Resources */,
 				BFEAF2452056EA7300E2A1F6 /* Main.storyboard in Resources */,
+				BF1D771A2058ABFC00B8746C /* ErnestineWeb.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +212,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDC6A53205716C800BA69D9 /* SubParkTableViewCell.swift in Sources */,
+				BFDC6A4D2057148A00BA69D9 /* TicketsController.swift in Sources */,
+				BFEAF2552056EC1600E2A1F6 /* HomeTableViewController.swift in Sources */,
 				BFEAF2482056EA7300E2A1F6 /* GroundPlan.xcdatamodeld in Sources */,
-				BFEAF2422056EA7300E2A1F6 /* ViewController.swift in Sources */,
+				BF1D771D2058B7C900B8746C /* CustomButton.swift in Sources */,
+				BFEAF25A2056F2DA00E2A1F6 /* HomeTableViewCell.swift in Sources */,
+				BFDC6A4F2057149700BA69D9 /* WeatherController.swift in Sources */,
+				BFDC6A492057146C00BA69D9 /* GroundplanController.swift in Sources */,
+				BFDC6A512057151600BA69D9 /* ParkTableViewController.swift in Sources */,
+				BFDC6A472057119000BA69D9 /* TabBarController.swift in Sources */,
+				BFDC6A4B2057147F00BA69D9 /* HoursController.swift in Sources */,
 				BFEAF2402056EA7300E2A1F6 /* AppDelegate.swift in Sources */,
+				BFB8BCD620574620000D2EE9 /* MainNavigationController.swift in Sources */,
+				BFEAF2582056EF5A00E2A1F6 /* Classes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +361,7 @@
 		BFEAF2522056EA7300E2A1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UGZJE492X;
 				INFOPLIST_FILE = GroundPlan/Info.plist;
@@ -292,7 +376,7 @@
 		BFEAF2532056EA7300E2A1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UGZJE492X;
 				INFOPLIST_FILE = GroundPlan/Info.plist;
