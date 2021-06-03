@@ -9,57 +9,36 @@
 import UIKit
 
 class GroundplanController: UIViewController, UIScrollViewDelegate {
-    
-    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
 
-    // UserDefaults
-//    let currentP = (UserDefaults.standard.object(forKey: "selectedPark") as? String)!
-//    let currentParkType = (UserDefaults.standard.object(forKey: "parkType") as? String)!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-//        let currentParkType = (UserDefaults.standard.object(forKey: "parkType") as? String)!
-        
+
         //MARK: Setup image for selected park
         checkIfImage()
-        
+
         // MARK: ScrollView Image
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 6.0
-        
-        
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
-    
-    
+
     //MARK: Func Setup image for selected park
     func checkIfImage() {
         let currentP = (UserDefaults.standard.object(forKey: "selectedPark") as? String)!
-        
         let img = UIImage(named: "\(currentP)-grondplan")
         imageView.image = img
-        
+
         let image : UIImage? = img
-        
-        if image != nil{
+
+        if image != nil {
             // if there is an image
             
-        }else{
-            
-            // if there is no image
+        } else {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width-40, height: 60))
             label.center = CGPoint(x: view.frame.width/2, y: view.frame.height/2-60)
             label.textAlignment = .center
@@ -79,6 +58,4 @@ class GroundplanController: UIViewController, UIScrollViewDelegate {
             self.view.addSubview(label)
         }
     }
-    
-    
 }

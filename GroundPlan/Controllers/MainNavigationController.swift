@@ -8,21 +8,18 @@
 
 import UIKit
 import CoreData
+
 class MainNavigationController: UINavigationController {
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
 
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
-    
+
     func setCustomBackImage() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "back-btn2")
@@ -30,6 +27,4 @@ class MainNavigationController: UINavigationController {
         self.navigationBar.tintColor = UIColorFromHex(rgbValue: 0xA13232, alpha: 1)
         self.navigationBar.backItem?.title = "test"
     }
-    
-
 }

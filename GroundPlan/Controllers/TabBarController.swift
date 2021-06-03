@@ -11,19 +11,18 @@ import CoreData
 
 
 class TabBarController: UITabBarController {
-    
     var currentPark:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // MARK: Storing UserDefaults
         UserDefaults.standard.set(currentPark, forKey: "selectedPark")
         let currentP = (UserDefaults.standard.object(forKey: "selectedPark") as? String)!
         let currentParkType = (UserDefaults.standard.object(forKey: "parkType") as? String)!
-        
+
         print(currentP)
-        
+
         // MARK: TabBar customization
         if currentParkType == "favorites" {
             self.tabBar.barTintColor = ColorPalette.yellow
@@ -34,16 +33,10 @@ class TabBarController: UITabBarController {
         } else {
             self.tabBar.barTintColor = ColorPalette.grey
         }
-        
-
 
         self.tabBar.tintColor = ColorPalette.blue // active Color selected
         self.tabBar.unselectedItemTintColor = ColorPalette.blue // not active Color
 
-        
-        
-        
-        
         // MARK: Navigation customization
         navigationController?.hidesBarsOnSwipe = false
 
@@ -51,16 +44,8 @@ class TabBarController: UITabBarController {
         backButton.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         self.navigationItem.title = "\(currentP.capitalized)"
-        
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
@@ -76,11 +61,8 @@ class TabBarController: UITabBarController {
         } else {
             self.navigationController?.navigationBar.barTintColor = ColorPalette.grey
         }
-        
+
         self.navigationController?.navigationBar.tintColor = ColorPalette.blue
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: ColorPalette.blue]
     }
-    
-    
-    
 }

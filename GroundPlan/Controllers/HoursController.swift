@@ -10,12 +10,10 @@ import UIKit
 import SafariServices
 
 class HoursController: UIViewController {
-
     // Titels
     @IBOutlet weak var openingHoursTitleLbl: UILabel!
     @IBOutlet weak var addressTitleLbl: UILabel!
-    
-    
+
     // Days of the week
     @IBOutlet weak var mondayLabel: UILabel!
     @IBOutlet weak var tuesdayLabel: UILabel!
@@ -24,7 +22,7 @@ class HoursController: UIViewController {
     @IBOutlet weak var fridayLabel: UILabel!
     @IBOutlet weak var saterdayLabel: UILabel!
     @IBOutlet weak var sundayLabel: UILabel!
-    
+
     // Hours of the week
     @IBOutlet weak var mondayHoursLabel: UILabel!
     @IBOutlet weak var tuesdayHourslabel: UILabel!
@@ -33,25 +31,20 @@ class HoursController: UIViewController {
     @IBOutlet weak var fridayHoursLabel: UILabel!
     @IBOutlet weak var saterdayHoursLabel: UILabel!
     @IBOutlet weak var sundayHoursLabel: UILabel!
-    
+
     // AddressLines
     @IBOutlet weak var parkAddressLbl: UILabel!
-    
-    
+
     // Buttons
     @IBOutlet weak var btnShowRoute: CustomButton!
-    
-    // button actions @ the bottom!!
-   
-    
+
     // UserDefaults
     let currentP = UserDefaults.standard.object(forKey: "selectedPark")
     let currentParkType = (UserDefaults.standard.object(forKey: "parkType") as? String)!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // MARK: Set BackgroundColor for btnShowRoute
         if currentParkType == "zoo" {
             btnShowRoute.backgroundColor = ColorPalette.green
@@ -60,22 +53,13 @@ class HoursController: UIViewController {
         } else {
             btnShowRoute.backgroundColor = .white
         }
-        
+
         // MARk: Set btnShowRoute text
         btnShowRoute.setTitle("Show route", for: .normal)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
-    
-    
-    
     // Button SHOW ROUTE
     @IBAction func btnShowRoute(_ sender: Any) {
-        
         let containerVC = UIViewController()
         let url = URL(string: "https://www.google.be")!
         let safariVC = SFSafariViewController(url: url)
@@ -86,6 +70,4 @@ class HoursController: UIViewController {
         safariVC.didMove(toParentViewController: containerVC)
         self.present(containerVC, animated: true, completion: nil)
     }
-    
-
 }

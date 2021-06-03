@@ -7,28 +7,21 @@ import UIKit
 
 
 enum ColorPalette {
-    
     static let blue =  UIColor(red:0.173, green: 0.243, blue: 0.314, alpha: 1.000)
-    
     static let green =  UIColor(red:0.476, green: 0.917, blue: 0.702, alpha: 1.000)
     static let opacityGreen =  UIColor(red:0.476, green: 0.917, blue: 0.702, alpha: 0.700)
-    
     static let yellow =  UIColor(red:1.000, green: 0.970, blue: 0.599, alpha: 1.000)
-    
     static let red =  UIColor(red:1.000, green: 0.544, blue: 0.544, alpha: 0.900)
     static let opacityRed =  UIColor(red:1.000, green: 0.544, blue: 0.544, alpha: 0.700)
-    
     static let grey =  UIColor(red:0.933, green: 0.933, blue: 0.933, alpha: 1.000)
-    
     static let disabled =  UIColor(red:0.535, green: 0.535, blue: 0.535, alpha: 1.000)
 }
-
 
 class Park {
     var firstline: String
     var secondline: String
     var isFavorite: Bool
-    
+
     init(firstline: String, secondline: String) {
         self.firstline = firstline
         self.secondline = secondline
@@ -39,7 +32,7 @@ class Park {
 class favoPark {
     var parkType: String
     var park: String
-    
+
     init(parkType: String, park: String) {
         self.parkType = parkType
         self.park = park

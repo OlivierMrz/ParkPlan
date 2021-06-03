@@ -10,26 +10,19 @@ import UIKit
 import SafariServices
 
 class TicketsController: UIViewController {
-    
     // MARK: labels
     @IBOutlet weak var ticketSubTitleLbl: UILabel!
-    
+
     // MARK: Button
     @IBOutlet weak var btnTickets: CustomButton!
-    
-    // button actions @ the bottom!!
-    
-    
+
     // UserDefaults
     let currentP = UserDefaults.standard.object(forKey: "selectedPark")
     let currentParkType = (UserDefaults.standard.object(forKey: "parkType") as? String)!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         // MARK: Set BackgroundColor for btnShowRoute
         if currentParkType == "zoo" {
             btnTickets.backgroundColor = ColorPalette.green
@@ -38,21 +31,14 @@ class TicketsController: UIViewController {
         } else {
             btnTickets.backgroundColor = .white
         }
-        
+
         // MARk: Set btnShowRoute text
         btnTickets.setTitle("Buy tickets", for: .normal)
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
-    
     // button actions
     @IBAction func btnTickets(_ sender: Any) {
-        
         let containerVC = UIViewController()
         let url = URL(string: "https://www.google.be")!
         let safariVC = SFSafariViewController(url: url)
@@ -62,9 +48,5 @@ class TicketsController: UIViewController {
         containerVC.view.addSubview(safariVC.view)
         safariVC.didMove(toParentViewController: containerVC)
         self.present(containerVC, animated: true, completion: nil)
-        
     }
-    
-
-
 }
